@@ -1,5 +1,6 @@
 package org.launchcode.techjobs_oo;
 
+import java.util.*;
 public class Job {
 
     private int id;
@@ -70,10 +71,6 @@ public class Job {
 
     public CoreCompetency getCoreCompetency() {
         return coreCompetency;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setName(String name) {
