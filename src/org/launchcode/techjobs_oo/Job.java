@@ -95,14 +95,27 @@ public class Job {
 
     @Override
     public String toString() {
+
+        if(employer.getValue().equals("")) {
+            employer.setValue("Data not found");
+        }
+        else if(location.getValue().equals("")) {
+            location.setValue("Data not found");
+        }
+        else if(positionType.getValue().equals("")) {
+            positionType.setValue("Data not found");
+        }
+        else if(coreCompetency.getValue().equals("")) {
+            coreCompetency.setValue("Data not found");
+        }
         return
                 "\n" +
-                "id=" + id + "\n" +
-                "name='" + name + '\'' + "\n" +
-                "employer=" + employer + "\n" +
-                "location=" + location + "\n" +
-                "positionType=" + positionType + "\n" +
-                "coreCompetency=" + coreCompetency + "\n"
+                "Id: " + id + "\n" +
+                "Name: " + name  + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n" +
+                "Core Competency: " + coreCompetency + "\n"
                 ;
     }
 }
